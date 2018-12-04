@@ -34,7 +34,7 @@ namespace CoffeShopProject
                 byteData = new Byte[fs.Length];
                 fs.Read(byteData,0, byteData.Length);
                 fs.Close();
-                fs.Dispose();
+                fs.Dispose();   
 
                 MemoryStream stream = new MemoryStream(byteData);
                 ImageBox.Image = Image.FromStream(stream);
